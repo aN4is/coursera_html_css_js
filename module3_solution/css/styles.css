@@ -24,7 +24,7 @@ body {
 	color: #ffffcc;
 	font-size: 1.8em;
 	font-weight: bold;
-	text-shadow: 1px 1px 2px #ffccc;
+	text-shadow: 1px 1px 2px #fffccc;
 	font-style: italic;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -33,7 +33,7 @@ body {
 	vertical-align: middle;
 }
 
-.navbar-brand a:hover, navbar-brand a:focus {
+.navbar-brand a:hover, .navbar-brand a:focus {
 	text-decoration: none;
 }
 
@@ -56,14 +56,41 @@ body {
   border: 1px solid #ffffcc;
 }
 
-.col-md-12, .col-sm-12, .col-xs-12 {
-	margin: 20px;
-	background-color: #ffffcc;
+.row {
+	width: 100%;
 }
 
+.col-xs-12 {
+	
+}
+
+.menu-item {
+	margin-bottom: 20px;
+	background-color: #ffffcc;
+	padding: 0 10px;
+}
+
+.menu-header a:hover, .menu-header a:focus {
+	text-decoration: none;	
+}
+
+
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
+  .col-md-4 {        
+    width: 33%;
+  }
+
 @media(max-width: 767px) {
-	.col-md-12, .col-sm-12, .col-xs-12 {
+  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+   	float: left;
+   	margin-left: 0 auto;
+  }
+
+  .col-xs-12 {
 	width: 90%;
-	margin-left: 0 auto;
-	}
+	margin-left: 0 auto;	
+  }
 }
